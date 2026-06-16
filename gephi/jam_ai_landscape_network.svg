@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="1210.7148"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-645.132996 -556.000000 1210.714844 1108.000000" height="1108.0"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <g id="edges">
+        <path stroke-linecap="round" fill="none"
+              class="id_China_Gov id_AI_Sector"
+              d="M -204.836578,412.113068 A 621.928076,621.928076 0,0 1,-407.681213,-274.103241"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_China_Gov id_Manufacturing"
+              d="M -178.287827,429.138611 A 110.698340,110.698340 0,0 1,-125.926346,519.344910"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Circle_Internet id_AI_Agent_Payments"
+              d="M -334.945343,460.588715 A 93.451840,93.451840 0,0 1,-390.899017,398.810699"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Stripe id_AI_Agent_Payments"
+              d="M -469.872314,308.222412 A 97.393261,97.393261 0,0 1,-400.430786,362.514221"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Capital_Influx id_Visa"
+              d="M 151.746872,-101.410522 A 328.468132,328.468132 0,0 1,-20.097860,-413.347473"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Blackstone id_Capital_Influx"
+              d="M 450.298645,189.584946 A 338.024711,338.024711 0,0 1,183.665588,-58.393719"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_BlackRock id_Capital_Influx"
+              d="M -48.785065,-527.198486 A 420.905414,420.905414 0,0 1,180.749542,-120.191208"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Blue_Owl id_Capital_Influx"
+              d="M 435.035278,-304.824188 A 291.376713,291.376713 0,0 1,208.283768,-93.299057"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Goldman_Sachs id_Infrastructure_&amp;_Spend"
+              d="M 479.453217,-101.464745 A 349.619279,349.619279 0,0 1,143.019775,-280.020386"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Federal_Reserve id_Metrics_&amp;_Valuation"
+              d="M -357.417236,194.253098 A 226.380683,226.380683 0,0 1,-309.814484,-28.899252"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Iran_War id_Capital_Influx"
+              d="M 17.254608,487.358948 A 508.561839,508.561839 0,0 1,153.322266,-68.824295"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Advent_International id_Exit_&amp;_Liquidity"
+              d="M 155.099533,445.010010 A 222.049145,222.049145 0,0 1,1.562580,285.355438"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Goldman_Sachs id_Advent_International"
+              d="M 496.719025,-87.458740 A 533.765899,533.765899 0,0 1,187.693649,441.320099"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Morgan_Stanley id_Infrastructure_&amp;_Spend"
+              d="M 131.397827,-528.982056 A 194.252134,194.252134 0,0 1,145.021362,-335.021820"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Asia_Capex_Boom id_AI_Sector"
+              d="M -339.155182,-413.465973 A 122.477018,122.477018 0,0 1,-379.093781,-310.257538"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Asia_Capex_Boom id_Defence"
+              d="M -333.035309,-443.996674 A 102.339880,102.339880 0,0 1,-249.008301,-484.798737"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_OpenAI id_Big_Four_Consulting"
+              d="M 23.964140,340.723816 A 428.235406,428.235406 0,0 1,400.016998,38.737228"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Anthropic id_Big_Four_Consulting"
+              d="M 164.326004,119.778358 A 242.724651,242.724651 0,0 1,400.493683,33.336243"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Micron_Technology id_Metrics_&amp;_Valuation"
+              d="M -552.212769,3.352854 A 239.844224,239.844224 0,0 1,-317.858124,-66.082748"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_Nvidia id_AI_Sector"
+              d="M -274.411407,-223.857956 A 134.138204,134.138204 0,0 1,-385.828033,-273.240143"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Snowflake id_Metrics_&amp;_Valuation"
+              d="M -453.641113,-145.167358 A 171.568508,171.568508 0,0 1,-303.331940,-85.110336"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Salesforce id_AI_Sector"
+              d="M -515.599426,-226.021027 A 122.245250,122.245250 0,0 1,-422.362732,-293.929047"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Dell id_Infrastructure_&amp;_Spend"
+              d="M -132.714844,-342.452484 A 231.847067,231.847067 0,0 1,101.229980,-329.674652"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_Dell id_Nvidia"
+              d="M -151.568237,-316.740723 A 126.130798,126.130798 0,0 1,-228.530945,-233.152344"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Anthropic id_SpaceX_/_xAI"
+              d="M 118.916946,149.466660 A 186.791031,186.791031 0,0 1,-25.507334,106.199875"
+              stroke="#800020" stroke-width="3.6" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_SpaceX_/_xAI id_Infrastructure_&amp;_Spend"
+              d="M -66.755867,19.288330 A 348.600018,348.600018 0,0 1,88.332031,-284.739777"
+              stroke="#800020" stroke-width="6.2" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_Apollo id_Neo_Cloud"
+              d="M 364.444672,382.694794 A 112.490459,112.490459 0,0 1,451.620819,336.796326"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Blackstone id_Neo_Cloud"
+              d="M 480.239258,208.193802 A 121.955269,121.955269 0,0 1,487.592285,317.238647"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Anthropic id_Metrics_&amp;_Valuation"
+              d="M 118.768478,148.690323 A 394.529251,394.529251 0,0 1,-258.996490,-15.980244"
+              stroke="#800020" stroke-width="3.6" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_SpaceX_/_xAI id_Exit_&amp;_Liquidity"
+              d="M -29.571049,95.174393 A 160.512295,160.512295 0,0 1,3.065722,171.193344"
+              stroke="#800020" stroke-width="14.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_SpaceX_/_xAI id_Metrics_&amp;_Valuation"
+              d="M -107.022949,65.984100 A 208.563262,208.563262 0,0 1,-241.272507,5.027565"
+              stroke="#800020" stroke-width="12.7" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_Apollo id_Broadcom"
+              d="M 340.107788,387.406158 A 131.079567,131.079567 0,0 1,294.170685,287.366821"
+              stroke="#800020" stroke-width="3.6" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Blackstone id_Broadcom"
+              d="M 457.509033,207.643738 A 149.738776,149.738776 0,0 1,335.373749,257.976593"
+              stroke="#800020" stroke-width="3.6" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_Broadcom id_Google"
+              d="M 286.114685,228.955231 A 362.669307,362.669307 0,0 1,311.660187,-161.407669"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Broadcom id_Anthropic"
+              d="M 273.603119,249.670624 A 155.082518,155.082518 0,0 1,162.459610,176.417343"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Broadcom id_Metrics_&amp;_Valuation"
+              d="M 273.804047,254.632202 A 547.712991,547.712991 0,0 1,-263.599762,-17.844881"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Nvidia id_Metrics_&amp;_Valuation"
+              d="M -246.546753,-208.113358 A 145.380459,145.380459 0,0 1,-255.420410,-90.051430"
+              stroke="#800020" stroke-width="3.6" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Philadelphia_SOX id_Metrics_&amp;_Valuation"
+              d="M -443.662659,66.719124 A 178.568833,178.568833 0,0 1,-323.167572,-47.686737"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Anthropic id_EU_/_ENISA"
+              d="M 120.982491,131.426468 A 345.027020,345.027020 0,0 1,-66.458435,-193.771057"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Anthropic id_Exit_&amp;_Liquidity"
+              d="M 135.567673,170.221848 A 153.522829,153.522829 0,0 1,48.707150,240.703964"
+              stroke="#800020" stroke-width="6.2" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Capital_Influx id_Anthropic"
+              d="M 189.405853,-63.472374 A 195.460515,195.460515 0,0 1,172.257202,112.227486"
+              stroke="#800020" stroke-width="3.6" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Google id_Infrastructure_&amp;_Spend"
+              d="M 308.130707,-182.426987 A 196.457995,196.457995 0,0 1,146.716431,-273.148468"
+              stroke="#800020" stroke-width="3.6" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Google id_Capital_Influx"
+              d="M 320.030396,-164.263763 A 148.737342,148.737342 0,0 1,216.335495,-90.750992"
+              stroke="#800020" stroke-width="3.6" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Hyperscalers id_Infrastructure_&amp;_Spend"
+              d="M 170.557861,-399.808838 A 95.389992,95.389992 0,0 1,156.414215,-336.040833"
+              stroke="#800020" stroke-width="3.6" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Meta id_Infrastructure_&amp;_Spend"
+              d="M 320.881958,-377.389191 A 181.851736,181.851736 0,0 1,163.880661,-302.746368"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none" class="id_Blue_Owl id_Meta"
+              d="M 422.173889,-321.280640 A 107.944713,107.944713 0,0 1,341.328247,-370.166595"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Broadcom id_Exit_&amp;_Liquidity"
+              d="M 277.810699,265.302429 A 253.189840,253.189840 0,0 1,30.825302,270.491119"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_CrowdStrike id_Metrics_&amp;_Valuation"
+              d="M -487.207489,142.855225 A 246.848058,246.848058 0,0 1,-318.823761,-45.804688"
+              stroke="#800020" stroke-width="1.0" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_OpenAI id_Exit_&amp;_Liquidity"
+              d="M 5.081338,345.225159 A 95.407457,95.407457 0,0 1,-12.166434,304.804321"
+              stroke="#800020" stroke-width="7.5" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_Capital_Influx id_SpaceX_/_xAI"
+              d="M 165.741669,-63.167461 A 236.742697,236.742697 0,0 1,-6.318280,61.601421"
+              stroke="#800020" stroke-width="3.6" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_SpaceX_/_xAI id_Tesla"
+              d="M -69.716797,108.387794 A 197.348778,197.348778 0,0 1,-192.834015,238.768021"
+              stroke="#800020" stroke-width="2.3" stroke-opacity="1.0"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_SpaceX_/_xAI id_Capital_Influx"
+              d="M -42.356598,23.588417 A 236.742697,236.742697 0,0 1,138.113510,-88.730042"
+              stroke="#800020" stroke-width="3.6" stroke-opacity="1.0"/>
+    </g>
+    <g id="arrows">
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_China_Gov id_AI_Sector"
+                  points="-406.671265,-276.928131 -406.268768,-273.598267 -409.093658,-274.608215"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_China_Gov id_Manufacturing"
+                  points="-126.064323,522.341736 -127.424759,519.275940 -124.427933,519.413879"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Circle_Internet id_AI_Agent_Payments"
+                  points="-391.414856,395.855408 -389.421356,398.552765 -392.376678,399.068634"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Stripe id_AI_Agent_Payments"
+                  points="-399.428040,365.341644 -401.844513,363.015594 -399.017059,362.012848"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Capital_Influx id_Visa"
+                  points="-19.807816,-416.333435 -18.604887,-413.202454 -21.590834,-413.492493"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Blackstone id_Capital_Influx"
+                  points="183.050507,-61.329987 185.133728,-58.701256 182.197449,-58.086174"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_BlackRock id_Capital_Influx"
+                  points="180.413696,-117.210068 179.258972,-120.359131 182.240112,-120.023285"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Blue_Owl id_Capital_Influx"
+                  points="205.311386,-92.892967 208.080719,-94.785248 208.486816,-91.812866"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Goldman_Sachs id_Infrastructure_&amp;_Spend"
+                  points="141.682541,-282.705872 144.362518,-280.688995 141.677032,-279.351776"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Federal_Reserve id_Metrics_&amp;_Valuation"
+                  points="-307.619934,-30.944744 -308.791748,-27.801987 -310.837219,-29.996517"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Iran_War id_Capital_Influx"
+                  points="155.612717,-70.761780 154.291016,-67.679077 152.353516,-69.969513"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Advent_International id_Exit_&amp;_Liquidity"
+                  points="1.090493,282.392822 3.043891,285.119385 0.081269,285.591492"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Goldman_Sachs id_Advent_International"
+                  points="184.946182,442.524841 187.091293,439.946350 188.296036,442.693848"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Morgan_Stanley id_Infrastructure_&amp;_Spend"
+                  points="143.492462,-332.440643 143.730774,-335.786255 146.311951,-334.257385"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Asia_Capex_Boom id_AI_Sector"
+                  points="-384.684692,-306.213776 -381.115662,-313.052979 -377.071899,-307.462097"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Asia_Capex_Boom id_Defence"
+                  points="-246.026398,-484.469635 -249.172852,-483.307770 -248.843750,-486.289642"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_OpenAI id_Big_Four_Consulting"
+                  points="403.012238,38.567978 400.101624,40.234840 399.932373,37.239616"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Anthropic id_Big_Four_Consulting"
+                  points="403.412964,34.027477 400.148071,34.795883 400.839294,31.876602"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Micron_Technology id_Metrics_&amp;_Valuation"
+                  points="-315.014374,-65.127151 -318.335938,-64.660881 -317.380310,-67.504616"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Nvidia id_AI_Sector"
+                  points="-389.636566,-278.993835 -382.951172,-275.144409 -388.704895,-271.335876"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Snowflake id_Metrics_&amp;_Valuation"
+                  points="-301.660614,-82.619019 -304.577606,-84.274673 -302.086273,-85.945999"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Salesforce id_AI_Sector"
+                  points="-419.366089,-294.071167 -422.291687,-292.430725 -422.433777,-295.427368"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Dell id_Infrastructure_&amp;_Spend"
+                  points="106.679588,-325.442413 99.113861,-326.949860 103.346100,-332.399445"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0" class="id_Dell id_Nvidia"
+                  points="-235.212036,-231.428070 -229.393082,-236.492889 -227.668808,-229.811798"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Anthropic id_SpaceX_/_xAI"
+                  points="-32.582977,98.040512 -21.427649,102.662056 -29.587015,109.737694"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_SpaceX_/_xAI id_Infrastructure_&amp;_Spend"
+                  points="104.471794,-293.984680 92.954475,-276.669891 83.709587,-292.809662"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Apollo id_Neo_Cloud"
+                  points="458.500214,337.329254 451.354340,340.236023 451.887299,333.356628"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Blackstone id_Neo_Cloud"
+                  points="484.299408,323.302216 484.560486,315.592224 490.624084,318.885071"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Anthropic id_Metrics_&amp;_Valuation"
+                  points="-264.670929,-25.169403 -254.401917,-18.817463 -263.591064,-13.143018"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_SpaceX_/_xAI id_Exit_&amp;_Liquidity"
+                  points="-1.015866,212.994553 -17.834881,169.152557 23.966324,173.234161"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_SpaceX_/_xAI id_Metrics_&amp;_Valuation"
+                  points="-263.072723,-26.219206 -225.649109,-5.872540 -256.895874,15.927670"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Apollo id_Broadcom"
+                  points="295.710419,276.677155 299.515533,288.136688 288.825836,286.596954"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Blackstone id_Broadcom"
+                  points="324.765137,255.952332 336.385864,252.672287 334.361633,263.280884"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Broadcom id_Google"
+                  points="315.962433,-166.802170 314.357452,-159.256546 308.962921,-163.558792"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Broadcom id_Anthropic"
+                  points="159.596176,170.139557 165.598526,174.985641 159.320724,177.849075"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Broadcom id_Metrics_&amp;_Valuation"
+                  points="-266.795990,-23.959961 -260.542236,-19.442993 -266.657288,-16.246773"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Nvidia id_Metrics_&amp;_Valuation"
+                  points="-261.953674,-81.451645 -259.720306,-93.318077 -251.120514,-86.784798"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Philadelphia_SOX id_Metrics_&amp;_Valuation"
+                  points="-316.356049,-48.788208 -322.616821,-44.280979 -323.718323,-51.092495"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Anthropic id_EU_/_ENISA"
+                  points="-66.223663,-196.761856 -64.963036,-193.653671 -67.953835,-193.888443"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Anthropic id_Exit_&amp;_Liquidity"
+                  points="30.272213,243.176422 47.470921,231.486496 49.943378,249.921432"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Capital_Influx id_Anthropic"
+                  points="165.565277,120.704407 168.018738,108.881523 176.495667,115.573448"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Google id_Infrastructure_&amp;_Spend"
+                  points="141.841705,-282.785736 151.535065,-275.585846 141.897797,-270.711090"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Google id_Capital_Influx"
+                  points="205.545609,-90.283768 216.101883,-96.145935 216.569107,-85.356049"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Hyperscalers id_Infrastructure_&amp;_Spend"
+                  points="148.862869,-328.319611 152.553604,-339.816498 160.274826,-332.265167"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Meta id_Infrastructure_&amp;_Spend"
+                  points="157.059769,-303.788208 164.401596,-306.156830 163.359756,-299.335907"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0" class="id_Blue_Owl id_Meta"
+                  points="338.260498,-376.347107 344.418518,-371.700470 338.237976,-368.632721"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Broadcom id_Exit_&amp;_Liquidity"
+                  points="25.021645,266.759155 32.691284,267.589294 28.959318,273.392944"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_CrowdStrike id_Metrics_&amp;_Valuation"
+                  points="-315.902100,-46.485737 -318.483246,-44.343849 -319.164276,-47.265526"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_OpenAI id_Exit_&amp;_Liquidity"
+                  points="-9.134121,282.509583 -1.019068,306.320465 -23.313799,303.288177"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_Capital_Influx id_SpaceX_/_xAI"
+                  points="-17.107933,62.074017 -6.554575,56.206593 -6.081983,66.996246"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_SpaceX_/_xAI id_Tesla"
+                  points="-199.456070,240.706680 -193.803345,235.457001 -191.864685,242.079041"
+                  stroke="none"/>
+        <polyline fill="#800020" fill-opacity="1.0"
+                  class="id_SpaceX_/_xAI id_Capital_Influx"
+                  points="148.913116,-88.820602 138.158798,-83.330231 138.068222,-94.129852"
+                  stroke="none"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#f0e2b6" r="14.5636" cx="-394.1368"
+                class="id_AI_Agent_Payments" cy="380.26117" stroke="#a89e7f"
+                stroke-opacity="1.0" stroke-width="2.5328"/>
+        <circle fill-opacity="1.0" fill="#f0e2b6" r="17.6364" cx="-400.21762"
+                class="id_AI_Sector" cy="-294.97916" stroke="#a89e7f"
+                stroke-opacity="1.0" stroke-width="3.0672"/>
+        <circle fill-opacity="1.0" fill="#c2dfff" r="14.5636" cx="170.44872"
+                class="id_Advent_International" cy="448.8819" stroke="#879cb2"
+                stroke-opacity="1.0" stroke-width="2.5328"/>
+        <circle fill-opacity="1.0" fill="#6e7f80" r="26.8364" cx="147.49089"
+                class="id_Anthropic" cy="143.59995" stroke="#4d5859"
+                stroke-opacity="1.0" stroke-width="4.6672"/>
+        <circle fill-opacity="1.0" fill="#add8e6" r="16.8636" cx="354.8429"
+                class="id_Apollo" cy="398.30872" stroke="#7997a1"
+                stroke-opacity="1.0" stroke-width="2.9327998"/>
+        <circle fill-opacity="1.0" fill="#fbe7a1" r="15.3364" cx="-341.9368"
+                class="id_Asia_Capex_Boom" cy="-429.90225" stroke="#afa170"
+                stroke-opacity="1.0" stroke-width="2.6671999"/>
+        <circle fill-opacity="1.0" fill="#f1e5ac" r="14.5636" cx="418.81702"
+                class="id_Big_Four_Consulting" cy="37.674908" stroke="#a8a078"
+                stroke-opacity="1.0" stroke-width="2.5328"/>
+        <circle fill-opacity="1.0" fill="#bdedff" r="13.8" cx="-62.28507"
+                class="id_BlackRock" cy="-533.7368" stroke="#84a5b2"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#c6deff" r="17.6364" cx="469.24756"
+                class="id_Blackstone" cy="192.48802" stroke="#8a9bb2"
+                stroke-opacity="1.0" stroke-width="3.0672"/>
+        <circle fill-opacity="1.0" fill="#addfff" r="15.3364" cx="438.84235"
+                class="id_Blue_Owl" cy="-321.05365" stroke="#799cb2"
+                stroke-opacity="1.0" stroke-width="2.6671999"/>
+        <circle fill-opacity="1.0" fill="#bcc6cc" r="23.7636" cx="299.3929"
+                class="id_Broadcom" cy="251.111" stroke="#838a8e"
+                stroke-opacity="1.0" stroke-width="4.1328"/>
+        <circle fill-opacity="1.0" fill="#f0e2b6" r="26.0636" cx="177.24213"
+                class="id_Capital_Influx" cy="-89.05816" stroke="#a89e7f"
+                stroke-opacity="1.0" stroke-width="4.5327997"/>
+        <circle fill-opacity="1.0" fill="#f3e3c3" r="14.5636" cx="-192.30875"
+                class="id_China_Gov" cy="421.78998" stroke="#aa9e88"
+                stroke-opacity="1.0" stroke-width="2.5328"/>
+        <circle fill-opacity="1.0" fill="#e5e4e2" r="13.8" cx="-320.58136"
+                class="id_Circle_Internet" cy="464.91028" stroke="#a09f9e"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#71797e" r="13.8" cx="-489.6051"
+                class="id_CrowdStrike" cy="157.66237" stroke="#4f5458"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#ffe4b5" r="13.8" cx="-231.11693"
+                class="id_Defence" cy="-482.82416" stroke="#b29f7e"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#566d7e" r="16.1" cx="-147.96315"
+                class="id_Dell" cy="-333.86536" stroke="#3c4c58"
+                stroke-opacity="1.0" stroke-width="2.8"/>
+        <circle fill-opacity="1.0" fill="#ffe5b4" r="13.8" cx="-65.049805"
+                class="id_EU_/_ENISA" cy="-211.71585" stroke="#b2a07d"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#fed8b1" r="32.2" cx="-4.41719"
+                class="id_Exit_&amp;_Liquidity" cy="247.82889" stroke="#b1977b"
+                stroke-opacity="1.0" stroke-width="5.6"/>
+        <circle fill-opacity="1.0" fill="#b8bc86" r="13.8" cx="-352.25766"
+                class="id_Federal_Reserve" cy="208.3378" stroke="#80835d"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#b4cfec" r="14.5636" cx="495.18622"
+                class="id_Goldman_Sachs" cy="-103.214355" stroke="#7d90a5"
+                stroke-opacity="1.0" stroke-width="2.5328"/>
+        <circle fill-opacity="1.0" fill="#71797e" r="19.1636" cx="328.95023"
+                class="id_Google" cy="-183.08731" stroke="#4f5458"
+                stroke-opacity="1.0" stroke-width="3.3328"/>
+        <circle fill-opacity="1.0" fill="#f3e5ab" r="15.3364" cx="166.9417"
+                class="id_Hyperscalers" cy="-416.08188" stroke="#aaa077"
+                stroke-opacity="1.0" stroke-width="2.6671999"/>
+        <circle fill-opacity="1.0" fill="#fbe7a1" r="26.0636" cx="129.05457"
+                class="id_Infrastructure_&amp;_Spend" cy="-308.06573"
+                stroke="#afa170" stroke-opacity="1.0" stroke-width="4.5327997"/>
+        <circle fill-opacity="1.0" fill="#f1e5ac" r="13.8" cx="22.717426"
+                class="id_Iran_War" cy="501.32883" stroke="#a8a078"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#ffe5b4" r="13.8" cx="-126.75421"
+                class="id_Manufacturing" cy="537.32587" stroke="#b2a07d"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#708090" r="16.1" cx="330.47992"
+                class="id_Meta" cy="-392.02234" stroke="#4e5964"
+                stroke-opacity="1.0" stroke-width="2.8"/>
+        <circle fill-opacity="1.0" fill="#fbe7a1" r="31.436398" cx="-282.62424"
+                class="id_Metrics_&amp;_Valuation" cy="-54.242886"
+                stroke="#afa170" stroke-opacity="1.0" stroke-width="5.4672"/>
+        <circle fill-opacity="1.0" fill="#616d7e" r="13.8" cx="-562.06757"
+                class="id_Micron_Technology" cy="14.661371" stroke="#434c58"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#b0e0e6" r="13.8" cx="122.52561"
+                class="id_Morgan_Stanley" cy="-541.07684" stroke="#7b9ca1"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#f0e2b6" r="16.1" cx="475.94794"
+                class="id_Neo_Cloud" cy="338.68088" stroke="#a89e7f"
+                stroke-opacity="1.0" stroke-width="2.8"/>
+        <circle fill-opacity="1.0" fill="#838996" r="18.4" cx="-254.5775"
+                class="id_Nvidia" cy="-226.4302" stroke="#5b5f69"
+                stroke-opacity="1.0" stroke-width="3.1999998"/>
+        <circle fill-opacity="1.0" fill="#657383" r="18.4" cx="18.577702"
+                class="id_OpenAI" cy="359.98483" stroke="#46505b"
+                stroke-opacity="1.0" stroke-width="3.1999998"/>
+        <circle fill-opacity="1.0" fill="#ffe4b5" r="14.5636" cx="-448.084"
+                class="id_Philadelphia_SOX" cy="81.91914" stroke="#b29f7e"
+                stroke-opacity="1.0" stroke-width="2.5328"/>
+        <circle fill-opacity="1.0" fill="#646d7e" r="13.8" cx="-521.2829"
+                class="id_Salesforce" cy="-212.13945" stroke="#464c58"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#6e7f80" r="13.8" cx="-468.46167"
+                class="id_Snowflake" cy="-142.85403" stroke="#4d5859"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#e5e4e2" r="41.4" cx="-62.06483"
+                class="id_SpaceX_/_xAI" cy="64.04315" stroke="#a09f9e"
+                stroke-opacity="1.0" stroke-width="7.2"/>
+        <circle fill-opacity="1.0" fill="#646d7e" r="13.8" cx="-484.76996"
+                class="id_Stripe" cy="306.4731" stroke="#464c58"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+        <circle fill-opacity="1.0" fill="#737ca1" r="14.5636" cx="-214.6484"
+                class="id_Tesla" cy="245.15437" stroke="#505670"
+                stroke-opacity="1.0" stroke-width="2.5328"/>
+        <circle fill-opacity="1.0" fill="#f0e2b6" r="13.8" cx="-18.357594"
+                class="id_Visa" cy="-431.26315" stroke="#a89e7f"
+                stroke-opacity="1.0" stroke-width="2.3999999"/>
+    </g>
+    <g id="node-labels-outline">
+        <text stroke-linecap="round" font-size="19" x="-394.1368" y="384.6656"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_AI_Agent_Payments" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.375px"><tspan x="-394.1368" dy="-0.45em">AI Agent</tspan><tspan x="-394.1368" dy="1.05em">Payments</tspan></text>
+        <text stroke-linecap="round" font-size="23" x="-400.21762"
+              y="-290.61612" fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_AI_Sector" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.875px">
+            AI Sector
+        </text>
+        <text stroke-linecap="round" font-size="19" x="170.44872" y="452.6021"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Advent_International"
+              stroke="#ffffff" stroke-opacity="1.0" stroke-width="2.375px"><tspan x="170.44872" dy="-0.45em">Advent</tspan><tspan x="170.44872" dy="1.05em">International</tspan></text>
+        <text stroke-linecap="round" font-size="35" x="147.49089" y="152.03378"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Anthropic" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="4.375px">
+            Anthropic
+        </text>
+        <text stroke-linecap="round" font-size="22" x="354.8429" y="403.61"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Apollo" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.75px">
+            Apollo
+        </text>
+        <text stroke-linecap="round" font-size="20" x="-341.9368" y="-425.23428"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Asia_Capex_Boom" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.5px">
+            Asia Capex Boom
+        </text>
+        <text stroke-linecap="round" font-size="19" x="418.81702" y="42.30894"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Big_Four_Consulting"
+              stroke="#ffffff" stroke-opacity="1.0" stroke-width="2.375px"><tspan x="418.81702" dy="-0.45em">Big Four</tspan><tspan x="418.81702" dy="1.05em">Consulting</tspan></text>
+        <text stroke-linecap="round" font-size="18" x="-62.28507" y="-530.2124"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_BlackRock" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            BlackRock
+        </text>
+        <text stroke-linecap="round" font-size="23" x="469.24756" y="196.99144"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Blackstone" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.875px">
+            Blackstone
+        </text>
+        <text stroke-linecap="round" font-size="20" x="438.84235" y="-317.10834"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Blue_Owl" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.5px">
+            Blue Owl
+        </text>
+        <text stroke-linecap="round" font-size="31" x="299.3929" y="257.18082"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Broadcom" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="3.875px">
+            Broadcom
+        </text>
+        <text stroke-linecap="round" font-size="34" x="177.24213" y="-80.76153"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Capital_Influx" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="4.25px">
+            Capital Influx
+        </text>
+        <text stroke-linecap="round" font-size="19" x="-192.30875" y="425.53802"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_China_Gov" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.375px">
+            China Gov
+        </text>
+        <text stroke-linecap="round" font-size="18" x="-320.58136" y="468.46106"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Circle_Internet" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            Circle Internet
+        </text>
+        <text stroke-linecap="round" font-size="18" x="-489.6051" y="161.21315"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_CrowdStrike" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            CrowdStrike
+        </text>
+        <text stroke-linecap="round" font-size="18" x="-231.11693" y="-479.2448"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Defence" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            Defence
+        </text>
+        <text stroke-linecap="round" font-size="21" x="-147.96315"
+              y="-329.75354" fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Dell" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.625px">
+            Dell
+        </text>
+        <text stroke-linecap="round" font-size="18" x="-65.049805"
+              y="-207.73221" fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_EU_/_ENISA" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            EU / ENISA
+        </text>
+        <text stroke-linecap="round" font-size="42" x="-4.41719" y="257.9495"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Exit_&amp;_Liquidity"
+              stroke="#ffffff" stroke-opacity="1.0" stroke-width="5.25px">
+            Exit&amp; Liquidity
+        </text>
+        <text stroke-linecap="round" font-size="18" x="-352.25766" y="211.86221"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Federal_Reserve" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            Federal Reserve
+        </text>
+        <text stroke-linecap="round" font-size="19" x="495.18622" y="-99.46631"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Goldman_Sachs" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.375px">
+            Goldman Sachs
+        </text>
+        <text stroke-linecap="round" font-size="25" x="328.95023" y="-176.9899"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Google" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="3.125px">
+            Google
+        </text>
+        <text stroke-linecap="round" font-size="20" x="166.9417" y="-411.26254"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Hyperscalers" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.5px">
+            Hyperscalers
+        </text>
+        <text stroke-linecap="round" font-size="34" x="129.05457" y="-299.7691"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Infrastructure_&amp;_Spend"
+              stroke="#ffffff" stroke-opacity="1.0" stroke-width="4.25px"><tspan x="129.05457" dy="-0.45em">Infrastructure&amp;</tspan><tspan x="129.05457" dy="1.05em">Spend</tspan></text>
+        <text stroke-linecap="round" font-size="18" x="22.717426" y="504.6357"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Iran_War" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            Iran War
+        </text>
+        <text stroke-linecap="round" font-size="18" x="-126.75421" y="541.77094"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Manufacturing" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            Manufacturing
+        </text>
+        <text stroke-linecap="round" font-size="21" x="330.47992" y="-388.1643"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Meta" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.625px">
+            Meta
+        </text>
+        <text stroke-linecap="round" font-size="41" x="-282.62424"
+              y="-46.154995" fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Metrics_&amp;_Valuation"
+              stroke="#ffffff" stroke-opacity="1.0" stroke-width="5.125px"><tspan x="-282.62424" dy="-0.45em">Metrics&amp;</tspan><tspan x="-282.62424" dy="1.05em">Valuation</tspan></text>
+        <text stroke-linecap="round" font-size="18" x="-562.06757" y="19.051508"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Micron_Technology" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px"><tspan x="-562.06757" dy="-0.45em">Micron</tspan><tspan x="-562.06757" dy="1.05em">Technology</tspan></text>
+        <text stroke-linecap="round" font-size="18" x="122.52561" y="-536.6867"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Morgan_Stanley" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            Morgan Stanley
+        </text>
+        <text stroke-linecap="round" font-size="21" x="475.94794" y="342.82346"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Neo_Cloud" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.625px">
+            Neo Cloud
+        </text>
+        <text stroke-linecap="round" font-size="24" x="-254.5775" y="-221.73099"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Nvidia" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="3.0px">
+            Nvidia
+        </text>
+        <text stroke-linecap="round" font-size="24" x="18.577702" y="365.5864"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_OpenAI" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="3.0px">
+            OpenAI
+        </text>
+        <text stroke-linecap="round" font-size="19" x="-448.084" y="86.49751"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Philadelphia_SOX" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.375px"><tspan x="-448.084" dy="-0.45em">Philadelphia</tspan><tspan x="-448.084" dy="1.05em">SOX</tspan></text>
+        <text stroke-linecap="round" font-size="18" x="-521.2829" y="-208.53374"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Salesforce" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            Salesforce
+        </text>
+        <text stroke-linecap="round" font-size="18" x="-468.46167"
+              y="-139.24832" fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Snowflake" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            Snowflake
+        </text>
+        <text stroke-linecap="round" font-size="54" x="-62.06483" y="76.64667"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_SpaceX_/_xAI" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="6.75px">
+            SpaceX / xAI
+        </text>
+        <text stroke-linecap="round" font-size="18" x="-484.76996" y="310.6743"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Stripe" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            Stripe
+        </text>
+        <text stroke-linecap="round" font-size="19" x="-214.6484" y="248.87459"
+              fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Tesla" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.375px">
+            Tesla
+        </text>
+        <text stroke-linecap="round" font-size="18" x="-18.357594"
+              y="-427.95627" fill="#0a0a0c" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Visa" stroke="#ffffff"
+              stroke-opacity="1.0" stroke-width="2.25px">
+            Visa
+        </text>
+    </g>
+    <g id="node-labels">
+        <text font-size="19" x="-394.1368" y="384.6656" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_AI_Agent_Payments"><tspan x="-394.1368" dy="-0.45em">AI Agent</tspan><tspan x="-394.1368" dy="1.05em">Payments</tspan></text>
+        <text font-size="23" x="-400.21762" y="-290.61612" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_AI_Sector">
+            AI Sector
+        </text>
+        <text font-size="19" x="170.44872" y="452.6021" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Advent_International"><tspan x="170.44872" dy="-0.45em">Advent</tspan><tspan x="170.44872" dy="1.05em">International</tspan></text>
+        <text font-size="35" x="147.49089" y="152.03378" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Anthropic">
+            Anthropic
+        </text>
+        <text font-size="22" x="354.8429" y="403.61" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Apollo">
+            Apollo
+        </text>
+        <text font-size="20" x="-341.9368" y="-425.23428" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Asia_Capex_Boom">
+            Asia Capex Boom
+        </text>
+        <text font-size="19" x="418.81702" y="42.30894" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Big_Four_Consulting"><tspan x="418.81702" dy="-0.45em">Big Four</tspan><tspan x="418.81702" dy="1.05em">Consulting</tspan></text>
+        <text font-size="18" x="-62.28507" y="-530.2124" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_BlackRock">
+            BlackRock
+        </text>
+        <text font-size="23" x="469.24756" y="196.99144" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Blackstone">
+            Blackstone
+        </text>
+        <text font-size="20" x="438.84235" y="-317.10834" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Blue_Owl">
+            Blue Owl
+        </text>
+        <text font-size="31" x="299.3929" y="257.18082" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Broadcom">
+            Broadcom
+        </text>
+        <text font-size="34" x="177.24213" y="-80.76153" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Capital_Influx">
+            Capital Influx
+        </text>
+        <text font-size="19" x="-192.30875" y="425.53802" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_China_Gov">
+            China Gov
+        </text>
+        <text font-size="18" x="-320.58136" y="468.46106" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Circle_Internet">
+            Circle Internet
+        </text>
+        <text font-size="18" x="-489.6051" y="161.21315" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_CrowdStrike">
+            CrowdStrike
+        </text>
+        <text font-size="18" x="-231.11693" y="-479.2448" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Defence">
+            Defence
+        </text>
+        <text font-size="21" x="-147.96315" y="-329.75354" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Dell">
+            Dell
+        </text>
+        <text font-size="18" x="-65.049805" y="-207.73221" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_EU_/_ENISA">
+            EU / ENISA
+        </text>
+        <text font-size="42" x="-4.41719" y="257.9495" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Exit_&amp;_Liquidity">
+            Exit&amp; Liquidity
+        </text>
+        <text font-size="18" x="-352.25766" y="211.86221" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Federal_Reserve">
+            Federal Reserve
+        </text>
+        <text font-size="19" x="495.18622" y="-99.46631" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Goldman_Sachs">
+            Goldman Sachs
+        </text>
+        <text font-size="25" x="328.95023" y="-176.9899" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Google">
+            Google
+        </text>
+        <text font-size="20" x="166.9417" y="-411.26254" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Hyperscalers">
+            Hyperscalers
+        </text>
+        <text font-size="34" x="129.05457" y="-299.7691" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Infrastructure_&amp;_Spend"><tspan x="129.05457" dy="-0.45em">Infrastructure&amp;</tspan><tspan x="129.05457" dy="1.05em">Spend</tspan></text>
+        <text font-size="18" x="22.717426" y="504.6357" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Iran_War">
+            Iran War
+        </text>
+        <text font-size="18" x="-126.75421" y="541.77094" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Manufacturing">
+            Manufacturing
+        </text>
+        <text font-size="21" x="330.47992" y="-388.1643" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Meta">
+            Meta
+        </text>
+        <text font-size="41" x="-282.62424" y="-46.154995" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Metrics_&amp;_Valuation"><tspan x="-282.62424" dy="-0.45em">Metrics&amp;</tspan><tspan x="-282.62424" dy="1.05em">Valuation</tspan></text>
+        <text font-size="18" x="-562.06757" y="19.051508" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Micron_Technology"><tspan x="-562.06757" dy="-0.45em">Micron</tspan><tspan x="-562.06757" dy="1.05em">Technology</tspan></text>
+        <text font-size="18" x="122.52561" y="-536.6867" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Morgan_Stanley">
+            Morgan Stanley
+        </text>
+        <text font-size="21" x="475.94794" y="342.82346" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Neo_Cloud">
+            Neo Cloud
+        </text>
+        <text font-size="24" x="-254.5775" y="-221.73099" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Nvidia">
+            Nvidia
+        </text>
+        <text font-size="24" x="18.577702" y="365.5864" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_OpenAI">
+            OpenAI
+        </text>
+        <text font-size="19" x="-448.084" y="86.49751" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Philadelphia_SOX"><tspan x="-448.084" dy="-0.45em">Philadelphia</tspan><tspan x="-448.084" dy="1.05em">SOX</tspan></text>
+        <text font-size="18" x="-521.2829" y="-208.53374" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Salesforce">
+            Salesforce
+        </text>
+        <text font-size="18" x="-468.46167" y="-139.24832" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Snowflake">
+            Snowflake
+        </text>
+        <text font-size="54" x="-62.06483" y="76.64667" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_SpaceX_/_xAI">
+            SpaceX / xAI
+        </text>
+        <text font-size="18" x="-484.76996" y="310.6743" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Stripe">
+            Stripe
+        </text>
+        <text font-size="19" x="-214.6484" y="248.87459" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Tesla">
+            Tesla
+        </text>
+        <text font-size="18" x="-18.357594" y="-427.95627" fill="#0a0a0c"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_Visa">
+            Visa
+        </text>
+    </g>
+</svg>

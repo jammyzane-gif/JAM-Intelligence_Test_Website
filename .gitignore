@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Editor / tooling
+.claude/
+
+# Local design iteration screenshots (not part of the deliverable)
+temporary screenshots/
