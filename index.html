@@ -639,10 +639,12 @@
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--burgundy);
+      text-decoration: none;
       transition: gap 0.25s var(--spring), color 0.2s var(--out-expo);
     }
     .sector-card:hover .sc-link { gap: 0.85rem; color: #a0102c; }
     .sc-link::after { content: '→'; }
+    #sectors .label { font-size: 1.1rem; letter-spacing: 0.12em; }
 
     /* ─── INSIGHTS ─── */
     #insights {
@@ -1098,15 +1100,15 @@
         <div class="sc-glyph" aria-hidden="true">◈</div>
         <h3>AI Transformation for SMEs</h3>
         <p>A marathon race needs mental and physical preparation. AI transformation demands the same discipline — not excitement about the destination, but honest preparation for what the journey actually costs. Clarity on which economy you're being invited into.</p>
-        <span class="sc-link">Read Analysis</span>
+        <a href="ai_transformation_for_smes.html" class="sc-link">Explore Sector</a>
       </div>
 
       <div class="sector-card reveal d2" tabindex="0" role="article">
         <div class="sc-id">Sector B — 02</div>
         <div class="sc-glyph" aria-hidden="true">◉</div>
-        <h3>EU Tech Landscapes</h3>
+        <h3>EU Tech and Economics Landscapes</h3>
         <p>Where does London actually fit in the AI value chain? The EU Tech Sovereign Package and London Tech Week signal political intent — but promise too much. Financial services AI, life sciences, and regulatory expertise are Europe's natural positions.</p>
-        <span class="sc-link">Read Analysis</span>
+        <a href="insight.html?id=london-ai-value-chain" class="sc-link">Explore Sector</a>
       </div>
 
       <div class="sector-card reveal d3" tabindex="0" role="article">
@@ -1114,7 +1116,7 @@
         <div class="sc-glyph" aria-hidden="true">◎</div>
         <h3>Energy &amp; AI Buildout</h3>
         <p>$700B capex and intensifying supply constraints across the entire supply chain. Whoever controls the energy distribution layer of AI has a structural advantage that pure software companies cannot replicate. Energy is the binding constraint.</p>
-        <span class="sc-link">Read Analysis</span>
+        <a href="insight.html?id=energy-beneath-ai" class="sc-link">Explore Sector</a>
       </div>
 
     </div>
