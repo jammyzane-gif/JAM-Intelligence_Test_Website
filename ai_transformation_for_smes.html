@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Transformation for SMEs — JAM Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0708; }
+  * { box-sizing: border-box; }
+  @keyframes jam-grid-pan { 0% { background-position: 0% 0%; } 100% { background-position: 100% 100%; } }
+  @keyframes jam-ring0 { 0% { transform: rotate(0deg) scale(1); opacity:.8; } 50% { transform: rotate(180deg) scale(1.05); opacity:1; } 100% { transform: rotate(360deg) scale(1); opacity:.8; } }
+  @keyframes jam-ring1 { 0% { transform: rotate(0deg) scale(1); opacity:.8; } 50% { transform: rotate(180deg) scale(1.10); opacity:1; } 100% { transform: rotate(360deg) scale(1); opacity:.8; } }
+  @keyframes jam-ring2 { 0% { transform: rotate(0deg) scale(1); opacity:.8; } 50% { transform: rotate(180deg) scale(1.15); opacity:1; } 100% { transform: rotate(360deg) scale(1); opacity:.8; } }
+</style>
+</head>
+<body>
+
+<div style="min-height:100vh; background:#0b0708; color:#ffffff; font-family:'Archivo', Helvetica, Arial, sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+
+  <!-- Masthead -->
+  <header style="display:flex; justify-content:space-between; align-items:center; padding:24px 56px; border-bottom:1px solid rgba(255,255,255,0.12);">
+    <span style="font-family:'IBM Plex Mono', monospace; font-size:13px; letter-spacing:4px; text-transform:uppercase; color:#ffffff;">Jam Intelligence</span>
+    <span style="font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:rgba(255,255,255,0.5);">Sector Briefing &nbsp;·&nbsp; Jun 2026</span>
+  </header>
+
+  <!-- Title block -->
+  <section style="padding:64px 56px 40px; max-width:1180px; margin:0 auto;">
+    <div style="font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:3.5px; text-transform:uppercase; color:#F89880; margin-bottom:22px;">Sector · 04</div>
+    <h1 style="font-family:'Newsreader', Georgia, serif; font-weight:500; font-size:68px; line-height:1.02; letter-spacing:-1px; margin:0; max-width:18ch; text-wrap:balance;">AI Transformation for SMEs</h1>
+    <p style="font-family:'Archivo', sans-serif; font-style:italic; font-size:18px; line-height:1.6; color:rgba(255,255,255,0.6); margin:26px 0 0; max-width:60ch;">AI transformation isn't a technology decision. It's a capital allocation decision.</p>
+  </section>
+
+  <!-- Hero figure on animated background circles -->
+  <section style="position:relative; padding:72px 24px 60px; background:#0b0708; overflow:hidden;">
+
+    <!-- Animated background circles (grid + rotating gradient rings + glow) -->
+    <div aria-hidden="true" style="position:absolute; inset:0; overflow:hidden; pointer-events:none;">
+      <!-- panning grid -->
+      <div style="position:absolute; inset:-20%; background-image:repeating-linear-gradient(100deg, #9aa0ad 0%, #9aa0ad 1px, transparent 1px, transparent 4%); background-size:200% 200%; opacity:0.12; -webkit-mask-image:radial-gradient(ellipse at center, transparent 28%, #000 78%); mask-image:radial-gradient(ellipse at center, transparent 28%, #000 78%); animation:jam-grid-pan 40s linear infinite;"></div>
+      <!-- concentric rotating rings -->
+      <div style="position:absolute; left:50%; top:50%; width:760px; height:760px; transform:translate(-50%,-50%);">
+        <div style="position:absolute; inset:0; border-radius:50%; border:2px solid rgba(248,152,128,0.55); background:linear-gradient(135deg, rgba(248,152,128,0.22), transparent 60%); animation:jam-ring0 5s ease-in-out infinite;"></div>
+        <div style="position:absolute; inset:0; border-radius:50%; border:2px solid rgba(214,91,72,0.5); background:linear-gradient(135deg, rgba(214,91,72,0.18), transparent 60%); animation:jam-ring1 5s ease-in-out infinite;"></div>
+        <div style="position:absolute; inset:0; border-radius:50%; border:2px solid rgba(128,0,32,0.5); background:linear-gradient(135deg, rgba(128,0,32,0.28), transparent 60%); animation:jam-ring2 5s ease-in-out infinite;"></div>
+      </div>
+      <!-- soft glow -->
+      <div style="position:absolute; inset:0; -webkit-mask-image:radial-gradient(90% 60% at 50% 50%, #000 40%, transparent); mask-image:radial-gradient(90% 60% at 50% 50%, #000 40%, transparent);">
+        <div style="position:absolute; inset:0; background:radial-gradient(ellipse at center, rgba(128,0,32,0.5), transparent 70%); filter:blur(120px);"></div>
+        <div style="position:absolute; inset:0; background:radial-gradient(ellipse at center, rgba(248,152,128,0.30), transparent 60%); filter:blur(80px);"></div>
+      </div>
+    </div>
+
+    <div style="position:relative; z-index:1;">
+      <h2 style="font-family:'Newsreader', Georgia, serif; font-weight:500; font-size:46px; line-height:1.05; letter-spacing:-0.5px; text-align:center; margin:0 0 40px; color:#ffffff;">AI Landscape Overview</h2>
+
+      <div style="position:relative; width:100%; max-width:1180px; aspect-ratio:16/9; margin:0 auto;">
+        <!-- AI Network Map component, themed for the dark page
+             (bg transparent, white labels, dark halo, coral edges, speed 0.75) -->
+        <iframe
+          title="AI Network Map"
+          src="ai_network_map.html?bg=transparent&labelColor=%23ffffff&halo=rgba(0%2C0%2C0%2C0.5)&edgeRgb=248%2C180%2C160&speed=0.75&amplitude=1"
+          allowtransparency="true"
+          loading="lazy"
+          style="position:absolute; inset:0; width:100%; height:100%; border:0; background:transparent;"></iframe>
+      </div>
+
+      <p style="font-family:'Archivo', sans-serif; font-size:14px; line-height:1.75; color:rgba(255,255,255,0.74); max-width:74ch; margin:44px auto 0; text-align:center;">A live network map of how major AI landscape players interact, tracking frequency, direction and type of relationship. Sources: Bloomberg, Financial Times. Last updated 12 June 2026.</p>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div style="max-width:1180px; margin:0 auto; padding:0 56px;">
+    <div style="height:1px; background:rgba(255,255,255,0.14);"></div>
+  </div>
+
+  <!-- Detail panel (placeholder) -->
+  <section style="max-width:1180px; margin:0 auto; padding:64px 56px 96px;">
+    <div style="display:grid; grid-template-columns:260px 1fr; gap:64px; align-items:start;">
+
+      <div>
+        <div style="font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:#F89880; margin-bottom:16px;">Detail</div>
+        <h3 style="font-family:'Newsreader', Georgia, serif; font-weight:500; font-size:30px; line-height:1.1; margin:0; color:#ffffff;">Reading the network</h3>
+        <p style="font-family:'Archivo', sans-serif; font-size:14px; line-height:1.7; color:rgba(255,255,255,0.5); margin:18px 0 0;">Detailed commentary, methodology notes and interaction breakdowns will appear here.</p>
+      </div>
+
+      <div>
+        <!-- Stat row -->
+        <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:28px; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.12);">
+          <div>
+            <div style="font-family:'Newsreader', Georgia, serif; font-size:42px; line-height:1; color:#ffffff;">32</div>
+            <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-top:10px;">Entities</div>
+          </div>
+          <div>
+            <div style="font-family:'Newsreader', Georgia, serif; font-size:42px; line-height:1; color:#ffffff;">9</div>
+            <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-top:10px;">Categories</div>
+          </div>
+          <div>
+            <div style="font-family:'Newsreader', Georgia, serif; font-size:42px; line-height:1; color:#ffffff;">11</div>
+            <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-top:10px;">Interaction types</div>
+          </div>
+          <div>
+            <div style="font-family:'Newsreader', Georgia, serif; font-size:42px; line-height:1; color:#ffffff;">Live</div>
+            <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-top:10px;">Cadence</div>
+          </div>
+        </div>
+
+        <!-- Legend -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:36px 56px; padding-top:40px;">
+          <div>
+            <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:18px;">Players — by category</div>
+            <div style="display:flex; flex-direction:column; gap:12px;">
+              <div style="display:flex; align-items:center; gap:12px;"><span style="width:12px; height:12px; border-radius:50%; background:#646b72; flex:none;"></span><span style="font-size:14px; color:rgba(255,255,255,0.82);">Companies</span></div>
+              <div style="display:flex; align-items:center; gap:12px;"><span style="width:12px; height:12px; border-radius:50%; background:#9cc0e0; flex:none;"></span><span style="font-size:14px; color:rgba(255,255,255,0.82);">Investors</span></div>
+              <div style="display:flex; align-items:center; gap:12px;"><span style="width:12px; height:12px; border-radius:50%; background:#9aa05d; flex:none;"></span><span style="font-size:14px; color:rgba(255,255,255,0.82);">Institutions</span></div>
+              <div style="display:flex; align-items:center; gap:12px;"><span style="width:12px; height:12px; border-radius:50%; background:#ecd793; flex:none;"></span><span style="font-size:14px; color:rgba(255,255,255,0.82);">Macro · Keywords · Regulators · Indices · Groups</span></div>
+            </div>
+          </div>
+          <div>
+            <div style="font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:18px;">Interactions — by family</div>
+            <div style="display:flex; flex-direction:column; gap:12px;">
+              <div style="display:flex; gap:14px;"><span style="font-family:'IBM Plex Mono', monospace; font-size:13px; color:#F89880; flex:none; width:130px;">Capital Flows</span><span style="font-size:14px; color:rgba(255,255,255,0.66);">Extended, Acquired</span></div>
+              <div style="display:flex; gap:14px;"><span style="font-family:'IBM Plex Mono', monospace; font-size:13px; color:#F89880; flex:none; width:130px;">Operational</span><span style="font-size:14px; color:rgba(255,255,255,0.66);">Allocated, Procured, Leased, Expensed</span></div>
+              <div style="display:flex; gap:14px;"><span style="font-family:'IBM Plex Mono', monospace; font-size:13px; color:#F89880; flex:none; width:130px;">Performance</span><span style="font-size:14px; color:rgba(255,255,255,0.66);">Generates, Reached, Operates</span></div>
+              <div style="display:flex; gap:14px;"><span style="font-family:'IBM Plex Mono', monospace; font-size:13px; color:#F89880; flex:none; width:130px;">Strategic Moves</span><span style="font-size:14px; color:rgba(255,255,255,0.66);">Targets, Formed</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder body -->
+        <div style="margin-top:44px; padding-top:40px; border-top:1px solid rgba(255,255,255,0.12); display:flex; flex-direction:column; gap:13px;">
+          <div style="height:11px; width:100%; background:rgba(255,255,255,0.07); border-radius:2px;"></div>
+          <div style="height:11px; width:96%; background:rgba(255,255,255,0.07); border-radius:2px;"></div>
+          <div style="height:11px; width:88%; background:rgba(255,255,255,0.07); border-radius:2px;"></div>
+          <div style="height:11px; width:62%; background:rgba(255,255,255,0.07); border-radius:2px;"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

@@ -79,7 +79,7 @@
       font-weight: 600;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--burgundy);
+      color: var(--white);
     }
 
     /* ─── LAYOUT ─── */
@@ -786,19 +786,26 @@
     }
     .contact-h {
       font-family: var(--f-display);
-      font-size: clamp(2.5rem,5.5vw,5rem);
+      font-size: clamp(1rem, 1.8vw, 1.4rem);
       font-weight: 300;
-      letter-spacing: -0.035em;
-      line-height: 1.1;
-      color: var(--off-white);
-      margin: 1.5rem 0 1.25rem;
+      letter-spacing: -0.01em;
+      line-height: 1.4;
+      color: var(--txt-mid);
+      margin: 1rem 0 1.25rem;
     }
-    .contact-h em { font-style: italic; color: var(--burgundy); }
     .contact-sub {
       font-size: 0.9rem;
       line-height: 1.72;
       color: var(--txt-mid);
       max-width: 420px;
+    }
+    #contact .label {
+      font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: var(--burgundy);
+      display: block;
+      margin-bottom: 0.75rem;
     }
     .contact-rows { display: flex; flex-direction: column; }
     .contact-row {
@@ -812,22 +819,24 @@
     .contact-row:first-child { border-top: 1px solid var(--bd-lo); }
     .contact-row:hover { border-bottom-color: var(--bd-mid); }
     .cr-label {
-      font-size: 0.62rem;
-      font-weight: 600;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--burgundy);
-      width: 4.5rem;
+      font-family: var(--f-display);
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--white);
+      width: auto;
+      min-width: 5.5rem;
       flex-shrink: 0;
     }
     .cr-value {
-      font-family: var(--f-display);
-      font-size: 1.15rem;
-      color: var(--off-white);
-      letter-spacing: -0.01em;
+      font-family: var(--f-body);
+      font-size: 0.875rem;
+      color: var(--txt-mid);
+      letter-spacing: 0.01em;
       transition: color 0.2s var(--out-expo);
     }
-    .contact-row:hover .cr-value { color: var(--white); }
+    .contact-row:hover .cr-value { color: var(--off-white); }
 
     /* ─── FOOTER ─── */
     footer {
@@ -1187,25 +1196,21 @@
       <div class="reveal">
         <span class="label">Get In Touch</span>
         <h2 class="contact-h">
-          Ready to turn<br>complexity into <em>clarity</em>?
+          Ready to turn<br>complexity into clarity?
         </h2>
         <p class="contact-sub">
-          Whether you're an SME navigating AI transformation, a consulting firm seeking intelligence support, or an entrepreneur tracking market dynamics — let's start a conversation.
+          Whether you're an SME navigating AI transformation, a consulting firm seeking intelligence support, or an entrepreneur tracking market dynamics, let's start a conversation.
         </p>
       </div>
 
       <div class="contact-rows reveal d2">
-        <a href="tel:+447777189013" class="contact-row">
-          <span class="cr-label">Phone</span>
-          <span class="cr-value">+44 07777 189 013</span>
-        </a>
         <a href="mailto:Jammy.zane@gmail.com" class="contact-row">
           <span class="cr-label">Email</span>
           <span class="cr-value">Jammy.zane@gmail.com</span>
         </a>
         <a href="https://www.linkedin.com/in/jiamu-zhang-8113ab28a" target="_blank" rel="noopener noreferrer" class="contact-row">
           <span class="cr-label">LinkedIn</span>
-          <span class="cr-value">Jiamu Zhang</span>
+          <span class="cr-value">Jammy Zane</span>
         </a>
       </div>
 

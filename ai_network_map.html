@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JAM Intelligence — AI Network Map</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #ffffff; }
+  * { box-sizing: border-box; }
+  #stage { position: relative; width: 100vw; height: 100vh; background: #ffffff; overflow: hidden; }
+  #net { display: block; width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="net"></canvas>
+</div>
+<script>
+/*
+ * JAM Intelligence — AI Network Map (standalone)
+ * Ported from the Claude Design component "AI Network Map.dc.html"
+ * (project "Floating dots AI network map"). The canvas rendering is identical
+ * to the source; the Claude Design / React runtime plumbing has been replaced
+ * with a plain bootstrap so this file runs on its own with no dependencies.
+ *
+ * Adjustable props (formerly the design component's editor controls):
+ *   speed      0–3    animation speed multiplier      (default 1)
+ *   amplitude  0–2.5  float amplitude multiplier       (default 1)
+ *   showLabels bool   draw node labels                 (default true)
+ *   bg         color  canvas background, or "transparent" (default #ffffff)
+ *   labelColor color  label text fill                  (default #111111)
+ *   halo       color  label outline/halo               (default rgba(255,255,255,0.92))
+ *   edgeRgb    r,g,b  edge + arrowhead colour           (default 120,22,38 burgundy)
+ * Override via query string, e.g.
+ *   ?speed=0.75&bg=transparent&labelColor=%23ffffff&halo=rgba(0,0,0,0.5)&edgeRgb=248,180,160
+ */
+(function () {
+  var qs = new URLSearchParams(location.search);
+  var OPTS = {
+    speed: qs.has('speed') ? parseFloat(qs.get('speed')) : 1,
+    amplitude: qs.has('amplitude') ? parseFloat(qs.get('amplitude')) : 1,
+    showLabels: qs.has('showLabels') ? qs.get('showLabels') !== 'false' : true,
+    bg: qs.has('bg') ? qs.get('bg') : '#ffffff',
+    labelColor: qs.has('labelColor') ? qs.get('labelColor') : '#111111',
+    halo: qs.has('halo') ? qs.get('halo') : 'rgba(255,255,255,0.92)',
+    edgeRgb: qs.has('edgeRgb') ? qs.get('edgeRgb') : '120,22,38'
+  };
+
+  if (OPTS.bg === 'transparent') {
+    document.documentElement.style.background = 'transparent';
+    document.body.style.background = 'transparent';
+    var st = document.getElementById('stage');
+    if (st) st.style.background = 'transparent';
+  }
+
+  var canvas = document.getElementById('net');
+  var ctx = canvas.getContext('2d');
+  var nodes, map, edges, raf, t0 = null;
+
+  buildData();
+  raf = requestAnimationFrame(frame);
+
+  function buildData() {
+    var C = {
+      cDark: '#3f4a54', cMid: '#646b72', cLight: '#cdd0d1', cLighter: '#dadad7',
+      blue: '#9cc0e0', blueLt: '#c3dcf0', olive: '#9aa05d',
+      gold: '#ecd793', goldPale: '#efe6bb', orange: '#f1b07f'
+    };
+    // [id, label, x, y, r, color]   coords in a virtual 1920x1080 frame
+    var N = [
+      ['blackrock','BlackRock',925,30,14,C.blueLt],
+      ['morgan','Morgan Stanley',1110,22,14,C.blueLt],
+      ['defence','Defence',765,78,12,C.gold],
+      ['visa','Visa',975,126,12,C.goldPale],
+      ['hyper','Hyperscalers',1162,140,26,C.gold],
+      ['meta','Meta',1320,166,18,C.cDark],
+      ['infra','Infrastructure&\nSpend',1140,235,44,C.gold],
+      ['blueowl','Blue Owl',1412,236,15,C.blueLt],
+      ['dell','Dell',855,222,18,C.cDark],
+      ['asia','Asia Capex Boom',700,160,22,C.gold],
+      ['aisector','AI Sector',600,300,24,C.gold],
+      ['nvidia','Nvidia',745,327,24,C.cDark],
+      ['salesforce','Salesforce',485,340,15,C.cDark],
+      ['enisa','EU / ENISA',945,340,15,C.goldPale],
+      ['google','Google',1322,372,28,C.cDark],
+      ['snowflake','Snowflake',548,410,15,C.cMid],
+      ['goldman','Goldman Sachs',1488,448,15,C.blueLt],
+      ['capital','Capital Influx',1188,458,42,C.gold],
+      ['metrics','Metrics&\nValuation',725,500,42,C.gold],
+      ['micron','Micron\nTechnology',452,558,15,C.cMid],
+      ['bigfour','Big Four\nConsulting',1410,578,14,C.gold],
+      ['spacex','SpaceX / xAI',945,595,50,C.cLighter],
+      ['philsox','Philadelphia\nSOX',600,655,14,C.gold],
+      ['anthropic','Anthropic',1152,690,36,C.cDark],
+      ['crowdstrike','CrowdStrike',520,700,15,C.cMid],
+      ['blackstone','Blackstone',1465,735,24,C.blueLt],
+      ['fed','Federal Reserve',658,750,15,C.olive],
+      ['tesla','Tesla',790,786,15,C.cDark],
+      ['exit','Exit& Liquidity',992,800,42,C.orange],
+      ['broadcom','Broadcom',1292,795,32,C.cLight],
+      ['neocloud','Neo Cloud',1460,880,16,C.gold],
+      ['openai','OpenAI',1018,900,26,C.gold],
+      ['stripe','Stripe',522,846,14,C.gold],
+      ['aiagent','AI Agent\nPayments',618,912,14,C.gold],
+      ['apollo','Apollo',1346,936,24,C.blue],
+      ['advent','Advent\nInternational',1166,972,14,C.blue],
+      ['chinagov','China Gov',802,960,15,C.gold],
+      ['circle','Circle Internet',682,1000,15,C.cLight],
+      ['iranwar','Iran War',1018,1035,13,C.gold],
+      ['manufacturing','Manufacturing',852,1060,13,C.gold]
+    ];
+    nodes = N.map(function (d, i) {
+      var r = d[4];
+      var fs = r >= 40 ? 40 : r >= 30 ? 30 : r >= 22 ? 24 : 20;
+      return {
+        id: d[0], label: d[1], bx: d[2], by: d[3], r: r, color: d[5],
+        fs: fs, amp: Math.max(7, Math.min(20, 26 - r * 0.32)),
+        ph: i * 1.7, ph2: i * 0.9 + 2,
+        x: d[2], y: d[3]
+      };
+    });
+    map = {};
+    nodes.forEach(function (n) { map[n.id] = n; });
+
+    edges = [
+      ['spacex','metrics',13],['spacex','exit',12],['capital','exit',8],['capital','spacex',7],
+      ['infra','exit',9],['infra','hyper',5],['anthropic','exit',6],['openai','exit',9],
+      ['broadcom','exit',5],['nvidia','metrics',4],['nvidia','aisector',4],['aisector','asia',3],
+      ['apollo','broadcom',5],['apollo','neocloud',3],['google','capital',4],['google','infra',3],
+      ['meta','google',2],['anthropic','spacex',4],['broadcom','anthropic',3],['capital','metrics',3],
+      ['capital','google',3],['nvidia','infra',3],['openai','spacex',3],['anthropic','capital',2],
+      ['broadcom','capital',2],['dell','nvidia',2],['dell','infra',2],
+      ['salesforce','aisector',1.2],['snowflake','metrics',1.2],['micron','metrics',1.2],
+      ['crowdstrike','metrics',1.2],['tesla','exit',1.4],['fed','metrics',1.2],['philsox','metrics',1.2],
+      ['visa','infra',1.2],['blackrock','infra',1.4],['morgan','hyper',1.4],['blueowl','meta',1.2],
+      ['goldman','capital',1.4],['blackstone','broadcom',1.6],['advent','broadcom',1.4],
+      ['bigfour','anthropic',1.4],['enisa','capital',1.2],['defence','asia',1.2],['stripe','aiagent',1.2],
+      ['aiagent','circle',1.2],['chinagov','exit',1.4],['iranwar','openai',1.3],
+      ['manufacturing','chinagov',1.2],['circle','metrics',1.2],['neocloud','broadcom',1.4],
+      ['hyper','infra',2],['blackstone','exit',1.4],['apollo','exit',1.6],['goldman','exit',1.2],
+      ['google','anthropic',2],['nvidia','exit',1.6]
+    ].map(function (e, i) {
+      return { s: map[e[0]], t: map[e[1]], w: e[2], curve: (i % 2 ? 1 : -1) };
+    });
+  }
+
+  function frame(ts) {
+    if (t0 == null) t0 = ts;
+    var t = ts - t0;
+    var cv = canvas;
+    var dpr = window.devicePixelRatio || 1;
+    var cw = cv.clientWidth || window.innerWidth;
+    var ch = cv.clientHeight || window.innerHeight;
+    if (cv.width !== Math.round(cw * dpr) || cv.height !== Math.round(ch * dpr)) {
+      cv.width = Math.round(cw * dpr); cv.height = Math.round(ch * dpr);
+    }
+
+    var speed = OPTS.speed != null ? OPTS.speed : 1;
+    var ampMul = OPTS.amplitude != null ? OPTS.amplitude : 1;
+    var showLabels = OPTS.showLabels != null ? OPTS.showLabels : true;
+
+    // contain 1920x1080 into the canvas
+    var s = Math.min(cw / 1920, ch / 1080);
+    var ox = (cw - 1920 * s) / 2;
+    var oy = (ch - 1080 * s) / 2;
+
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, cw, ch);
+    if (OPTS.bg !== 'transparent') {
+      ctx.fillStyle = OPTS.bg;
+      ctx.fillRect(0, 0, cw, ch);
+    }
+    ctx.setTransform(dpr * s, 0, 0, dpr * s, ox * dpr, oy * dpr);
+
+    // float
+    for (var i = 0; i < nodes.length; i++) {
+      var n = nodes[i];
+      var a = n.amp * ampMul;
+      n.x = n.bx + (Math.sin(t * 0.00031 * speed + n.ph) * a + Math.sin(t * 0.00019 * speed + n.ph2) * a * 0.6);
+      n.y = n.by + (Math.cos(t * 0.00027 * speed + n.ph2) * a + Math.cos(t * 0.00015 * speed + n.ph) * a * 0.6);
+    }
+
+    // edges
+    ctx.lineCap = 'round';
+    for (var j = 0; j < edges.length; j++) drawEdge(ctx, edges[j]);
+
+    // nodes
+    for (var k = 0; k < nodes.length; k++) drawNode(ctx, nodes[k]);
+
+    // labels
+    if (showLabels) {
+      for (var l = 0; l < nodes.length; l++) drawLabel(ctx, nodes[l]);
+    }
+
+    raf = requestAnimationFrame(frame);
+  }
+
+  function drawEdge(ctx, e) {
+    var sx = e.s.x, sy = e.s.y, tx = e.t.x, ty = e.t.y;
+    var dx = tx - sx, dy = ty - sy;
+    var dist = Math.hypot(dx, dy) || 1;
+    var ux = dx / dist, uy = dy / dist;
+    var arrow = Math.max(e.w * 1.7, 9);
+    // trim target end to node edge
+    var ex = tx - ux * (e.t.r + arrow * 0.55);
+    var ey = ty - uy * (e.t.r + arrow * 0.55);
+    var mx = (sx + ex) / 2, my = (sy + ey) / 2;
+    var bow = dist * 0.13 * e.curve;
+    var cpx = mx + (-uy) * bow, cpy = my + (ux) * bow;
+    var a = Math.min(0.9, 0.3 + e.w * 0.05);
+
+    ctx.beginPath();
+    ctx.moveTo(sx, sy);
+    ctx.quadraticCurveTo(cpx, cpy, ex, ey);
+    ctx.strokeStyle = 'rgba(' + OPTS.edgeRgb + ',' + a + ')';
+    ctx.lineWidth = e.w;
+    ctx.stroke();
+
+    // arrowhead along tangent at end
+    var tdx = ex - cpx, tdy = ey - cpy;
+    var tl = Math.hypot(tdx, tdy) || 1;
+    tdx /= tl; tdy /= tl;
+    var px = -tdy, py = tdx;
+    var tipx = ex + tdx * arrow * 0.55, tipy = ey + tdy * arrow * 0.55;
+    ctx.beginPath();
+    ctx.moveTo(tipx, tipy);
+    ctx.lineTo(ex - tdx * arrow * 0.45 + px * arrow * 0.5, ey - tdy * arrow * 0.45 + py * arrow * 0.5);
+    ctx.lineTo(ex - tdx * arrow * 0.45 - px * arrow * 0.5, ey - tdy * arrow * 0.45 - py * arrow * 0.5);
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(' + OPTS.edgeRgb + ',' + Math.min(0.95, a + 0.1) + ')';
+    ctx.fill();
+  }
+
+  function drawNode(ctx, n) {
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+    ctx.fillStyle = n.color;
+    ctx.fill();
+    // glossy highlight
+    var g = ctx.createRadialGradient(n.x - n.r * 0.32, n.y - n.r * 0.38, n.r * 0.05, n.x, n.y, n.r);
+    g.addColorStop(0, 'rgba(255,255,255,0.55)');
+    g.addColorStop(0.5, 'rgba(255,255,255,0.08)');
+    g.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = g;
+    ctx.fill();
+    // ring
+    ctx.lineWidth = Math.max(1.2, n.r * 0.06);
+    ctx.strokeStyle = 'rgba(0,0,0,0.22)';
+    ctx.stroke();
+  }
+
+  function drawLabel(ctx, n) {
+    var lines = n.label.split('\n');
+    var fs = n.fs;
+    ctx.font = fs + "px 'Helvetica Neue', Helvetica, Arial, sans-serif";
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    var lh = fs * 1.04;
+    var centered = n.r >= 40;
+    var startY;
+    if (centered) {
+      startY = n.y - (lines.length - 1) * lh / 2;
+    } else {
+      startY = n.y - n.r - 8 - (lines.length - 1) * lh;
+    }
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = fs * 0.3;
+    ctx.strokeStyle = OPTS.halo;
+    for (var i = 0; i < lines.length; i++) ctx.strokeText(lines[i], n.x, startY + i * lh);
+    ctx.fillStyle = OPTS.labelColor;
+    for (var j = 0; j < lines.length; j++) ctx.fillText(lines[j], n.x, startY + j * lh);
+  }
+
+  window.addEventListener('beforeunload', function () { if (raf) cancelAnimationFrame(raf); });
+})();
+</script>
+</body>
+</html>
