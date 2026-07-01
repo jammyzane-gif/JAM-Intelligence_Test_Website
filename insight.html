@@ -622,6 +622,33 @@
       .art-nebula { animation: none; }
       .reveal { opacity: 1; transform: none; transition: none; }
     }
+
+    /* ─── LIKE BUTTON ─── */
+    .like-wrap { margin-top: 1.5rem; }
+    .like-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 8px;
+      padding: 0.5rem 1.1rem;
+      color: #ffffff;
+      font-family: var(--f-body);
+      font-size: 0.78rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition:
+        background 0.2s var(--out-expo),
+        border-color 0.2s var(--out-expo),
+        transform 0.18s var(--spring);
+    }
+    .like-btn:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.45); transform: translateY(-1px); }
+    .like-btn:active { transform: translateY(0); }
+    .like-btn.liked { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.55); }
+    .like-btn.liked .like-star path { fill: #ffffff; }
+    .like-star { flex-shrink: 0; }
+    .like-count { font-family: var(--f-mono); font-size: 0.68rem; color: rgba(255,255,255,0.6); }
   </style>
 </head>
 <body>
@@ -677,6 +704,15 @@
             <span class="byline-name">Jammy Zane</span>
             <span class="byline-role">Founder · JAM Intelligence</span>
           </span>
+        </div>
+        <div class="like-wrap">
+          <button class="like-btn" id="likeBtn" aria-label="Like this article" aria-pressed="false">
+            <svg class="like-star" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <span>Star</span>
+            <span class="like-count" id="likeCount">0</span>
+          </button>
         </div>
       </div>
     </div>
@@ -753,6 +789,39 @@
   <script>
   /* ════════ ARTICLE DATA ════════ */
   const ARTICLES = {
+    'ai-stress-points-capital': {
+      tag: 'AI Transformation',
+      sector: 'Sector A · AI Transformation',
+      date: '1 Jul 2026',
+      read: '8 min read',
+      title: "AI's Three Stress Points in Capital Markets",
+      dek: "One disruption, three balance sheets. The AI bubble is treated as one question; it is really real-economy software disruption transmitting into three capital-market structures that absorb it differently and in sequence.",
+      body: [
+        { t: 'lead', x: "The public IPO window gates private-equity exits; credit conditions gate refinancing for both. The noise is loudest where the danger is least — public equity; the real systemic transmitter is credit." },
+        { t: 'h2', x: "1. Public equity — concentration misread as a bubble" },
+        { t: 'p', x: "Recent selloffs revived the bubble chorus, but the move was a positioning unwind, not a demand collapse: Micron guided to $50bn revenue (16% above consensus) on 16 contracts worth ~$100bn to 2030, and Apple's price hike reflects memory-cost pass-through, not slowing demand. Russell 1000 Growth trades at a P/E of 22 sitting at the bottom 30% of its 10-year range, so the de-rating is done, and over $1T of buybacks make corporates net buyers." },
+        { t: 'p', x: "The real flag is dispersion, not valuation: a concentrated, hyperscaler-led tape where single-stock volatility hides beneath a calm index (the Mag 7 fell 10% in June, turning into the “Lag Seven”). The unproven profitability sits with the user, not the builder: the rally prices the chipmakers' real profits, while the 29% hyperscaler cash-return measures selling compute, not enterprises earning a return deploying it (Salesforce: 8–9% organic). Leadership is already broadening to equal-weight, small caps and cyclicals, as the AI trade's rate of change peaks." },
+        { t: 'h2', x: "2. Private equity — the exit machine seizes" },
+        { t: 'p', x: "Around 30% of PE sits in software, the cohort most exposed to AI disruption, and the symptoms are in the plumbing: DPI is gummed at 8–10% against a 15–20% norm, holding periods have stretched to 7 years, and executives are borrowing against personal carry (broker Enness Global reports inquiries up threefold). Part distress, part conviction financing the wait." },
+        { t: 'p', x: "The R1000G de-rating and OpenAI's delayed IPO keep the exit window shut. Medallia is the template: Thoma Bravo refused fresh equity and handed the business to Blackstone-led creditors, signalling the first major AI-driven software-LBO write-off. It crystallises PE losses, tests private credit, and threatens broader write-downs as private marks catch down to weaker public comparables." },
+        { t: 'h2', x: "3. Credit — the transmitter, and where the real risk concentrates" },
+        { t: 'p', x: "This is the leg to watch. Morgan Stanley flags an expected $500bn of AI-related debt issuance for 2026; the financing of the buildout is migrating from equity to debt, arriving faster than the market can absorb it, and the composition is deteriorating. The clearest sign: the hyperscalers, once prized as “bond-equivalents” — stable, cash-gushing, high-margin — are now selling debt to fund capex, a different and more fragile business model the equity market is actively repricing." },
+        { t: 'p', x: "Debt now funds every layer of the stack: the chips (Apollo and Blackstone's $35bn private-credit package behind Broadcom), the labs (Anthropic's $35bn debt-funded buildout), launch and infrastructure (SpaceX's $25bn investment-grade bond), and the hardware vendors (HPE's $13bn customer-financing arm) — with high-yield and first-time data-centre issuance alone jumping from $0 last autumn to $40bn and heading toward $60bn." },
+        { t: 'quote', x: "Co-existence holds only while the chain is fed by real cash flow; if it is fed by recycled capital, limited liquidity is the kill switch." },
+        { t: 'p', x: "Three readings turn those numbers into a warning. First, the concentration is in the intermediaries, not just the issuers: the same sponsors financing the chip buildout are absorbing disrupted-software losses (Medallia) and issuing their own bonds — so the risk is correlated across one book, exactly the “circular financing” the BIS has now flagged. Second, the form of the debt is the tell: HPE lending customers money to buy HPE gear is vendor financing, the classic late-cycle move that manufactures demand out of debt. Third, backlog is only as good as its independence from the loop that created it: Nvidia's $1tn of revenue visibility reassures only if that demand is funded by real end-revenue, not by the same capital cycling through the system." },
+        { t: 'h2', x: "4. Where it breaks, and where it resolves" },
+        { t: 'p', x: "The chain has four roles: enablers (chip and compute winners), builders (hyperscalers and neo-clouds, free cash flow falling), monetisers (enterprise users whose ROI is still unproven), and financiers (the IPO, PE and private-credit machinery). These are not rivals but two ends of one flow — the market only rotates which end it rewards: enablers first on realised revenue, builders later on monetisation proof." },
+        { t: 'p', x: "<strong>The directional call:</strong> public-equity stress is dispersion, not a bubble — the de-rating is done. Private equity is a slow grind: the exit backlog persists. Credit is where a rate or liquidity shock would actually cascade. Watch the credit tells: issuance, refinancing walls and private-credit redemptions, not the index." },
+        { t: 'p', x: "The froth clears only when real enterprises' demand is actually paying and earning ROI — replacing recycled capital with real cash. It will accrue to whoever owns the enterprise control point: Microsoft's install base, not the commoditising model. Until then, capital markets simply reprice, day to day, whether the two ends of the chain connect before the levered builders run out of runway." }
+      ],
+      takeaways: [
+        "Public equity stress is dispersion and a positioning unwind, not a bubble — the de-rating is already done.",
+        "PE's exit machine is seized: DPI at 8–10% against a 15–20% norm, holding periods stretched to 7 years.",
+        "Credit is the real transmitter: $500bn AI-related debt issuance expected in 2026, quality deteriorating and risk correlated across intermediary books.",
+        "Liquidity is the master risk; real end-demand must replace recycled capital for the chain to hold."
+      ]
+    },
+
     'ai-marathon': {
       tag: 'AI Transformation',
       sector: 'Sector A · AI Transformation',
@@ -894,7 +963,33 @@
     }).join('');
 
     initReveal();
+    initLike();
     window.scrollTo(0, 0);
+  }
+
+  /* ════════ LIKE BUTTON ════════ */
+  function initLike() {
+    var id = getId();
+    var key = 'jam_likes_' + id;
+    var btn = document.getElementById('likeBtn');
+    var countEl = document.getElementById('likeCount');
+    var starPath = btn.querySelector('path');
+
+    function applyState(s) {
+      countEl.textContent = s.count;
+      btn.classList.toggle('liked', s.liked);
+      btn.setAttribute('aria-pressed', String(s.liked));
+      starPath.setAttribute('fill', s.liked ? '#ffffff' : 'none');
+    }
+
+    applyState(JSON.parse(localStorage.getItem(key) || '{"liked":false,"count":0}'));
+
+    btn.addEventListener('click', function() {
+      var s = JSON.parse(localStorage.getItem(key) || '{"liked":false,"count":0}');
+      s = { liked: !s.liked, count: s.liked ? Math.max(0, s.count - 1) : s.count + 1 };
+      localStorage.setItem(key, JSON.stringify(s));
+      applyState(s);
+    });
   }
 
   /* ════════ BEHAVIOUR ════════ */
