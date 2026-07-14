@@ -896,7 +896,7 @@
     <ul class="nav-links" role="list">
       <li><a href="#about">About</a></li>
       <li><a href="#sectors">Sectors</a></li>
-      <li><a href="#insights">Insights</a></li>
+      <li><a href="insights.html">Insights</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -1071,7 +1071,7 @@
         <a href="ai_transformation_for_smes.html" class="sc-link">Explore Sector</a>
       </div>
 
-      <a href="insight.html?id=london-ai-value-chain" class="sector-card reveal d2">
+      <a href="insights_eu.html" class="sector-card reveal d2">
         <div class="sc-id">Sector B — 02</div>
         <div class="sc-glyph" aria-hidden="true">◉</div>
         <h3>EU Tech and Economics Landscapes</h3>
@@ -1079,7 +1079,7 @@
         <span class="sc-link">Explore Sector</span>
       </a>
 
-      <a href="insight.html?id=energy-beneath-ai" class="sector-card reveal d3">
+      <a href="insights_energy.html" class="sector-card reveal d3">
         <div class="sc-id">Sector C — 03</div>
         <div class="sc-glyph" aria-hidden="true">◎</div>
         <h3>Energy &amp; AI Buildout</h3>
@@ -1106,7 +1106,7 @@
           Latest Insights
         </h2>
       </div>
-      <a href="#insights" class="btn-ghost" style="flex-shrink:0;align-self:flex-end;">View All</a>
+      <a href="insights.html" class="btn-ghost" style="flex-shrink:0;align-self:flex-end;">View All</a>
     </div>
 
     <div class="insights-grid">
@@ -1127,38 +1127,8 @@
         </div>
       </a>
 
-      <!-- Card 2 -->
-      <a class="insight-card reveal" href="insight.html?id=ai-marathon">
-        <div class="ic-meta">
-          <span class="ic-tag">AI Transformation</span>
-          <span class="ic-date">Jun 2026</span>
-        </div>
-        <h3>AI Transformation: A Marathon Race Needs Mental and Physical Preparation</h3>
-        <p>The companies struggling most with AI adoption aren't the ones who moved too slowly — they're the ones who committed before they were ready. Fortune 500 CEOs are asking a simple question: when does the AI investment actually pay back?</p>
-        <span class="ic-link">Read Brief</span>
-      </a>
-
-      <!-- Card 3 -->
-      <a class="insight-card reveal d1" href="insight.html?id=london-ai-value-chain">
-        <div class="ic-meta">
-          <span class="ic-tag">EU Tech</span>
-          <span class="ic-date">Jun 2026</span>
-        </div>
-        <h3>Where Does London Actually Fit in the AI Value Chain?</h3>
-        <p>The EU Tech Sovereign Package covers four pillars: Cloud and Data Act, Chips Act 2.0, open source software promotion and AI data centre investment. Promising — but promising too much. Financial services AI and regulatory expertise are London's genuine positions.</p>
-        <span class="ic-link">Read Brief</span>
-      </a>
-
-      <!-- Card 4 -->
-      <a class="insight-card reveal d2" href="insight.html?id=energy-beneath-ai">
-        <div class="ic-meta">
-          <span class="ic-tag">Energy</span>
-          <span class="ic-date">Jun 2026</span>
-        </div>
-        <h3>The Energy Beneath the AI Wave: Opportunity, Risk, and the Race for Infrastructure Control</h3>
-        <p>AI booming is driving growth across memory, semiconductors and energy. $700B capex — expected $800B by end of 2026 — is intensifying energy supply constraints. Energy is the binding constraint that determines how fast the whole thing can actually scale.</p>
-        <span class="ic-link">Read Brief</span>
-      </a>
+      <!-- Cards 2–4: newest brief per sector, rendered from articles.js -->
+      <div id="homeInsights" style="display:contents;"></div>
 
     </div>
   </div>
@@ -1208,13 +1178,24 @@
     <ul class="foot-links" role="list">
       <li><a href="#about">About</a></li>
       <li><a href="#sectors">Sectors</a></li>
-      <li><a href="#insights">Insights</a></li>
+      <li><a href="insights.html">Insights</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </footer>
 
+<script src="articles.js"></script>
 <script>
+  /* Latest insight per sector (excluding the featured card) */
+  (function () {
+    const FEATURED = 'ai-stress-points-capital';
+    const cards = Object.keys(SECTORS)
+      .map(key => articlesBySector(key).filter(id => id !== FEATURED)[0])
+      .filter(Boolean);
+    document.getElementById('homeInsights').innerHTML =
+      cards.map((id, i) => articleCard(id, i ? 'd' + Math.min(i, 2) : '')).join('');
+  })();
+
   /* Nav scroll effect */
   const nav = document.getElementById('nav');
   const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 60);
