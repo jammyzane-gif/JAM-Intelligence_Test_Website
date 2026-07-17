@@ -10,3 +10,7 @@ temporary screenshots/
 # Master event-log workbook — curated data, stays local only
 # (never committed, so it can never reach the public repo)
 data/
+
+# Pipeline working artifacts (regenerated every run; PNGs in web_assets are the deliverable)
+gephi/jam_*_network.svg
+gephi/jam_*_network.gephi
