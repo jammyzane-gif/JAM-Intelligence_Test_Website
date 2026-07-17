@@ -14,3 +14,4 @@ data/
 # Pipeline working artifacts (regenerated every run; PNGs in web_assets are the deliverable)
 gephi/jam_*_network.svg
 gephi/jam_*_network.gephi
+gephi/scripts/__pycache__/
