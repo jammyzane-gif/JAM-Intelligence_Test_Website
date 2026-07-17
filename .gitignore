@@ -6,3 +6,7 @@
 
 # Local design iteration screenshots (not part of the deliverable)
 temporary screenshots/
+
+# Master event-log workbook — curated data, stays local only
+# (never committed, so it can never reach the public repo)
+data/

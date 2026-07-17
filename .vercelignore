@@ -2,3 +2,7 @@
 CLAUDE.md
 README.md
 gephi/
+data/
+docs/
+*.xlsx
+*.rtf
