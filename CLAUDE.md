@@ -8,9 +8,13 @@
 ## Workflow
 - Work freely: git push origin main (private repo — saves progress, nothing goes public)
 - Go live: git push prod main (public repo — triggers Vercel deploy to jammyzane.com)
-- Internal files (CLAUDE.md, README.md, gephi/) are listed in .vercelignore so
-  Vercel never serves them on the live site. Add any new internal/working file
-  to .vercelignore before it first reaches prod.
+- CLAUDE.md and docs/ are GIT-IGNORED on main (never reach either remote's main).
+  Their GitHub backup lives on the origin-only `internal-docs` branch:
+  after editing them, run `bash docs/backup_internal_docs.sh` to snapshot+push.
+- data/ (master Event Log workbook) is git-ignored and local-only — no GitHub copy.
+- .vercelignore additionally stops Vercel serving gephi/, *.xlsx, *.rtf etc.
+  Add any new internal/working file to .gitignore (and back it up on
+  internal-docs if it's a doc) before it first reaches prod.
 
 ## Tech stack
 - Static HTML/CSS/JS
