@@ -32,6 +32,7 @@ NETWORKS = {
         "sectorPage": "ai_transformation_for_smes.html",
         "archivePage": "network_archive_ai.html",
         "sizing": "tiered",   # dense net: bucket sizes so differences read clearly
+        "shape": "circle",    # equalise x/y spread after layout (FA2 tends to a tall oval here)
         "enabled": True,
     },
     "economy": {
@@ -398,6 +399,20 @@ def build_network(key, cfg, sheets, registry, manifest, force=False):
     run_layout("Noverlap", 600, {"Noverlap.ratio.name": 1.5, "Noverlap.margin.name": 14.0})
     for _ in range(6):
         run_layout("Label Adjust", 1000)
+
+    if cfg.get("shape") == "circle":
+        # widen the cloud: rescale x so horizontal spread matches vertical
+        ns = call("/graph/nodes", method="GET")["nodes"]
+        cx = sum(nd["x"] for nd in ns) / len(ns)
+        cy = sum(nd["y"] for nd in ns) / len(ns)
+        sx = max(abs(nd["x"] - cx) for nd in ns) or 1.0
+        sy = max(abs(nd["y"] - cy) for nd in ns) or 1.0
+        k = sy / sx
+        print(f"  circularise: x-spread {sx:.0f} vs y-spread {sy:.0f} -> scale x by {k:.2f}")
+        must("/graph/nodes/positions", {"positions": [
+            {"id": nd["id"], "x": cx + (nd["x"] - cx) * k, "y": nd["y"]} for nd in ns]}, quiet=True)
+        run_layout("Noverlap", 300, {"Noverlap.ratio.name": 1.5, "Noverlap.margin.name": 14.0})
+        run_layout("Label Adjust", 800)
 
     for n in names:
         r, g, b = hex_rgb(random.choice(palette_for(ntype(n))))
